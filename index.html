@@ -1,166 +1,549 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
 
-    <!-- Animate CSS CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Nagasai | Full Stack Developer</title>
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Nagasai Kotha | Software Developer</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src=""></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <meta name="author" content="Nagasai Kotha" />
+  <meta name="description"
+    content="Software Developer with a passion for backend development and artificial intelligence." />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav>
-        <h1>Nagasai Kotha</h1>
-        <ul class="navigation">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
-      </button>
-    </nav>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
 
-    <!-- <p> 0024 </p> -->
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
 
-    <!-- About Section -->
-    <section class="hero" id="about">
-        <img src="assets/images/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img" />
-        <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">
-                Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in React native , Angular JS, Amazon web services. Strong engineering professional with a Bachelor of Technology - BTech
-                focused in Mining Engineering from Jawaharlal Nehru Technological University.
-            </p>
-        </div>
-    </section>
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/profile-photo.jpeg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
 
-    <!-- More about -->
-    <section class="more-about">
-        <h2>More About Me</h2>
-        <p>&bull; &nbsp; Experience in developing User Interfaces for Mobile/Desktop using React Native,Angular, HTML, CSS, JavaScript, bootstrap.</p>
-        <p>&bull; &nbsp; Have experience in backend with Python and java</p>
-        <p>&bull; &nbsp; Extensive knowledge in developing applications in a single page (SPAs) using various JavaScript frameworks like Angular, React.</p>
-        <p>&bull; &nbsp; Hands-on experience in AWS Cloud services</p>
-    </section>
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Profile</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text">
+          <i class="mdi-account small"></i><span>Work History</span></a>
+      </li>
 
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
 
-        <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-                <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
-                <img src="assets/icons/angular.png" alt="" loading="lazy" class="icon icon-card" />
-                <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
-            </div>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
 
-            <div class="second-set animate__animated animate__pulse">
-                <img src="assets/icons/aws.png" alt="" loading="lazy" class="icon icon-card" />
-                <img src="assets/icons/python.png" alt="" loading="lazy" class="icon icon-card" />
-                <img src="assets/icons/vue.png" alt="" loading="lazy" class="icon icon-card" />
-            </div>
-        </div>
-    </section>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        <!-- <a aria-label="Open Nagasai's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Nagasai's resume in a new tab"
+          href="#" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2 class="projects-title">Some of my Recent Projects</h2>
-        <div class="projects-container">
-            <div class="project-container project-card">
-                <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Expense Tracker</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi quos culpa aut saepe! Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Netflix Clone</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi quos culpa aut saepe! Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-            <div class="project-container project-card">
-                <img src="assets/images/greenyEarth.png" alt="greeny-earth" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Greeny Earth</h3>
-                <p class="project-details">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas ratione vel inventore labore commodi modi quos culpa aut saepe! Alias!
-                </p>
-                <a href="#" target="_blank" class="project-link">Check it Out</a>
-            </div>
-        </div>
-    </section>
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-        <h2>Get In Touch With Me</h2>
-        <div class="contact-form-container">
-            <div class="contact-form">
-                <form action="https://formspree.io/f/xyylnggw" method="POST">
-                    <div class="form-control">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="message">Message</label>
-                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
-                    </div>
-                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-        <a href="https://twitter.com/nagrepala42" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy" class="socicon" /></a>
-        <a href="https://www.instagram.com/nagrepala/" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
-        <a href="https://www.linkedin.com/in/nagasaikotha/" target="_blank"><img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
-        <a href="https://github.com/Nagasaikotha" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" /></a>
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Nagasai Kotha</a><span
+        class="black-text">Software Developer</span>
     </div>
+  </nav>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Work History</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
 
-    <!-- Footer section -->
-    <footer>
-        <p class="copy">&copy; Copyright 2021 by Yotta TechPorts</p>
-        <!-- <p class="copy">
-            Built with &#x2661; by
-            <a href="https://twitter.com/koladechris" target="_blank">Kolade Chris (Ksound)</a
-        >
-      </p> -->
-    </footer>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Nagasai's Resume in a new tab" href="" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
 
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
+  <main>
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span>Nagasai Kotha.</span> </h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5>
+              <h5>Highly motivated programmer with a thirst for knowledge. Thrives on tackling intricate problems and
+                crafting innovative solutions with a can-do attitude.</h5>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/nagasaikotha/" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/Nagasaikotha/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
 
-    <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Full Story</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">Overview</h3>
+      <div class="container flow-text">
+        <p>
+          Passionate developer dedicated to mastering the art of building seamless user experiences.
+          Proficient in React, React Native, Python, and Angular, with a flair for cloud technologies including AWS,
+          GCP, and Firebase. Committed to transforming ideas into innovative solutions, I am driven, enthusiastic, and
+          very much dedicated to creating impactful applications. </p>
+        <p>
+        <ul>
+          <li><b>Languages:</b> Python, React, React Native, JavaScript, HTML/CSS</li>
+          <li><b>Databases:</b> MySQL, PostgreSQL, DynamoDB</li>
+          <li><b>Libraries:</b> NumPy, Pandas</li>
+          <li><b>Frameworks:</b> Flask, Django, Node.js, Bootstrap</li>
+          <li><b>Tools & Technologies:</b> Git, AWS, GCP</li>
+        </ul>
+        </p>
+      </div>
+    </section>
+
+
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Career Highlights</h3>
+      <div class="container">
+
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.yottatechports.com/" target="_blank"><img alt="YTP logo"
+                    src="/assets/img/YTP-Logo.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.yottatechports.com" target="_blank"
+                      class="teal-text hoverline">Yotta Techports</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Software Engineer</div>
+            <ul style="margin-left: 20px;">
+              <li><strong>UI Development:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Proficient in developing UI screens using React for web applications and React Native for mobile
+                  applications.</li>
+                <li>Skilled in translating design mockups into interactive and responsive user interfaces.</li>
+              </ul>
+              <li><strong>Backend Development:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Experienced in building APIs using Python frameworks such as Flask and Django.</li>
+                <li>Capable of deploying serverless functions using AWS Lambda or Google Cloud Functions for scalable
+                  and efficient backend solutions.</li>
+              </ul>
+              <li><strong>Design Collaboration:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Proficient in creating and iterating on UI/UX designs using Figma, ensuring alignment with client
+                  requirements and industry best practices.</li>
+                <li>Actively collaborate with design teams to ensure seamless integration of front-end and back-end
+                  components.</li>
+              </ul>
+              <li><strong>Client Interaction:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Effectively communicate with clients to gather requirements, provide project updates, and address
+                  any concerns or feedback.</li>
+                <li>Skilled in managing client expectations and fostering long-term relationships through clear and
+                  proactive communication.</li>
+              </ul>
+              <li><strong>Team Management:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Demonstrate strong leadership skills in coordinating and guiding cross-functional teams throughout
+                  the development lifecycle.</li>
+                <li>Provide mentorship and support to team members, fostering a collaborative and productive work
+                  environment.</li>
+              </ul>
+              <li><strong>Technical Recruitment:</strong></li>
+              <ul style="margin-left: 20px;">
+                <li>Conduct in-depth technical interviews to assess candidates' skills and suitability for various
+                  development roles.</li>
+                <li>Play a key role in recruiting top talent by evaluating candidates' technical proficiency,
+                  problem-solving abilities, and cultural fit.</li>
+              </ul>
+            </ul>
+
+          </div>
+          <div class="card-action">
+            <span>January 2020 -
+              <script>
+                var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                var currentDate = new Date();
+                document.write(months[currentDate.getMonth()] + ' ' + currentDate.getFullYear());
+              </script> | Hyderabad, India
+            </span>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/dynery_with_gradient.png"
+                  style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Dynery<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Dynery reimagines and recreates dining out for a digital, social, and mobile-first generation.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Technologies:</b> React Native, AWS</li>
+                  <li>A platform for sharing</li>
+                  <li>Personalized experiences</li>
+                  <li>A unified and seamless experience</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://trofimoinc.com/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="HRO Guide" src="/assets/img/hro guide.svg" style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">HRO Guide<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Build and manage RFPs, collaborate with team members and view real-time solution matches with
+                  participating sellers.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> React, Python, Bootstrap, Django, SQLAlchemy, Postgresql, Digital Ocean</li>
+                  <li>Simply Put, We Want To Make Buyers Better At Buying, And Sellers Better At Selling.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit HRO Guide" href="https://hro.guide/" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="/assets/img/aeon.svg" style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Aeon<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Aeon is a powerful web application designed to streamline the complex task of processing loan credit
+                  memos
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Seamless creditmemo processing</li>
+                  <li>Customisable extraction</li>
+                  <li>Efficient collaboration</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Aeon" href="#" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/JavaScript_Logo.png" class="responsive-img" />JavaScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/python-logo-1-300x300.jpg" class="responsive-img" />Python
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/dynamodb.png" class="responsive-img" />DynamoDB
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/postgresql-logo.png" class="responsive-img" />PostgreSQL
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/react-logo.svg" class="responsive-img" />React <br /> React Native
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" />NumPy
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" />Pandas
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/angular-logo.png" class="responsive-img" />Angular
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/django-logo.webp" class="responsive-img" />Django
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/gcp-logo.png" class="responsive-img" />GCP
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Nagasai" data-position="top" data-tooltip="Call Nagasai"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Nagasai">+91-8106534494</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Nagasai" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Nagasai" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Nagasai" href="mailto:nagrepala42@gmail.com"
+              class="hoverline">nagrepala42@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Nagasai on GitHub" href="https://github.com/Nagasaikotha" target="_blank"
+            data-position="top" data-tooltip="View Nagasai on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Nagasai on Github" href="https://github.com/Nagasaikotha/" class="hoverline"
+              target="_blank">github.com/Nagasaikotha</a></a>
+        </p>
+        <p>
+          <a aria-label="View Nagasai on LinkedIn" href="https://www.linkedin.com/in/nagasaikotha/" target="_blank"
+            data-position="top" data-tooltip="View Nagasai on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Nagasai on LinkedIn"
+              href="https://www.linkedin.com/in/nagasaikotha" class="hoverline"
+              target="_blank">linkedin.com/in/Nagasaikotha</a></a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    const typed = new Typed('.typing', {
+      strings: ["Developer", "Fast Learner", "Team Player", "Passionate", "Adaptable"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      $(".button-collapse").sideNav({
+        menuWidth: 190,
+        edge: "left",
+        closeOnClick: true
+      })
+    })
+  </script>
 </body>
-
 </html>
