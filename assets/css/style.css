@@ -630,4 +630,28 @@ small {
   #intro.section {
     background-position-x: 30%;
   }
+  #blogs {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+
+  #blogs h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .blog-list a {
+    display: block;
+    color: #008cba;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .blog-list a:hover {
+    text-decoration: underline;
+  }
+
+
 }
