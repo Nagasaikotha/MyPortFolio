@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width initial-scale=1" />
@@ -14,11 +15,11 @@
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-E3YCVPCJ1Q');
   </script>
   <meta name="author" content="Nagasai Kotha" />
-  <meta name="description" content="Full Stack Developer with a passion for creating robust and scalable web/mobile applications." />
+  <meta name="description"
+    content="Full Stack Developer with a passion for creating robust and scalable web/mobile applications." />
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
@@ -38,6 +39,7 @@
   <meta name="theme-color" content="#ffffff" />
   <meta name="robots" content="index, follow" />
 </head>
+
 <body>
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
@@ -48,30 +50,54 @@
         </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>Profile</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Profile Section Link',
+          transport_type: 'beacon'
+        })"><i class="mdi-social-person small"></i><span>Profile</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text">
+        <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Work History Section Link',
+          transport_type: 'beacon'
+        })">
           <i class="mdi mdi-account-tie small"></i>
           <span>Work History</span>
         </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Projects Section Link',
+          transport_type: 'beacon'
+        })"><i class="mdi-av-my-library-books small"></i><span>Projects</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Skills Section Link',
+          transport_type: 'beacon'
+        })"><i class="mdi-action-assessment small"></i><span>Skills</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Blogs section" href="#blogs" class="waves-effect waves-dark teal-text"><i
-                class="mdi-action-assessment small"></i><span>Blogs</span></a>
+        <a aria-label="Navigate to the Blogs section" href="#blogs" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Blogs Section Link',
+          transport_type: 'beacon'
+        })"><i class="mdi-action-assessment small"></i><span>Blogs</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'Contact Section Link',
+          transport_type: 'beacon'
+        })">
+          <i class="mdi-content-mail small"></i><span>Contact</span>
+        </a>
       </li>
       <!-- <li class="bold">
         <a aria-label="Open Nagasai's resume section" href="#resume" class="waves-effect waves-dark teal-text">
@@ -91,31 +117,67 @@
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
       <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i>
-            <span>About</span></a>
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+          event_category: 'Navigation',
+          event_label: 'About Section Link',
+          transport_type: 'beacon'
+        })">
+          <i class="mdi-social-person small"></i>
+          <span>About</span>
+        </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text">
+        <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+             event_category: 'Navigation',
+             event_label: 'Work History Link',
+             transport_type: 'beacon'
+           })">
           <i class="mdi mdi-account-tie small"></i>
-          <span>Work History</span></a>
+          <span>Work History</span>
+        </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+             event_category: 'Navigation',
+             event_label: 'Projects Link',
+             transport_type: 'beacon'
+           })">
+          <i class="mdi-av-my-library-books small"></i>
+          <span>Projects</span>
+        </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+             event_category: 'Navigation',
+             event_label: 'Skills Link',
+             transport_type: 'beacon'
+           })">
+          <i class="mdi-action-assessment small"></i>
+          <span>Skills</span>
+        </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Blogs section" href="#blogs" class="waves-effect waves-dark teal-text"><i
-                class="mdi-action-assessment small"></i><span>Blogs</span></a>
+        <a aria-label="Navigate to the Blogs section" href="#blogs" class="waves-effect waves-dark teal-text" onclick="gtag('event', 'click', {
+             event_category: 'Navigation',
+             event_label: 'Blogs Link',
+             transport_type: 'beacon'
+           })">
+          <i class="mdi-action-assessment small"></i>
+          <span>Blogs</span>
+        </a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"
+          onclick="gtag('event', 'click', {
+             event_category: 'Navigation',
+             event_label: 'Contact Link',
+             transport_type: 'beacon'
+           })">
+          <i class="mdi-content-mail small"></i>
+          <span>Contact</span>
+        </a>
       </li>
       <!-- <li class="bold">
         <a aria-label="Open Nagasai's Resume in a new tab" href="#resume"
@@ -141,15 +203,31 @@
                   <i class="fa fa-linkedin"></i>
                 </button>
               </a>
-              <a href="https://github.com/Nagasaikotha/" target="_blank">
+              <a href="https://github.com/Nagasaikotha/" target="_blank" onclick="gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': 'GitHub Profile'
+              })">
                 <button class="icon-btn github">
                   <i class="fa fa-github"></i>
                 </button>
               </a>
             </div>
             <div class='buttons'>
-              <a href="#about" class="readme">Full Story</a>
-              <a href="#contact" class="contactme">Contact Me</a>
+              <a href="#about" class="readme" onclick="gtag('event', 'click', {
+                event_category: 'Navigation',
+                event_label: 'Full Story Link',
+                transport_type: 'beacon'
+              })">
+                Full Story
+              </a>
+
+              <a href="#contact" class="contactme" onclick="gtag('event', 'click', {
+                event_category: 'Navigation',
+                event_label: 'Contact Me Link',
+                transport_type: 'beacon'
+              })">
+                Contact Me
+              </a>
             </div>
           </div>
         </div>
@@ -254,8 +332,8 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="food app" src="/assets/img/food_logo.jpeg"
-                  style="height: 100%; width: 100%" class="activator" />
+                <img alt="food app" src="/assets/img/food_logo.jpeg" style="height: 100%; width: 100%"
+                  class="activator" />
               </div>
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">
@@ -324,7 +402,8 @@
               <div class="card-content">
                 <span class="card-title activator teal-text hoverline">Loan Credit Memo Processor<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>This project is a powerful web application designed to streamline the complex task of processing loan credit
+                <p>This project is a powerful web application designed to streamline the complex task of processing loan
+                  credit
                   memos
                 </p>
               </div>
@@ -436,34 +515,71 @@
       <div class="container">
         <p>
           <a aria-label="Read Nagasai's Blog on Medium"
-             href="https://medium.com/@nagrepala42/react-native-vs-flutter-how-react-native-cemented-its-base-that-no-other-technology-can-beat-b163189b9893"
-             target="_blank"
-             data-position="top" data-tooltip="Read Blog on Medium"
-             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+            href="https://medium.com/@nagrepala42/react-native-vs-flutter-how-react-native-cemented-its-base-that-no-other-technology-can-beat-b163189b9893"
+            target="_blank" data-position="top" data-tooltip="Read Blog on Medium"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" onclick="gtag('event', 'click', {
+              event_category: 'Outbound Link',
+              event_label: 'Medium Button - Flutter vs React Native',
+              transport_type: 'beacon'
+            })">
             <i class="fa fa-medium"></i>
-            <a href="https://medium.com/@nagrepala42/react-native-vs-flutter-how-react-native-cemented-its-base-that-no-other-technology-can-beat-b163189b9893" target="_blank" class="hoverline">
+            <a href="https://medium.com/@nagrepala42/react-native-vs-flutter-how-react-native-cemented-its-base-that-no-other-technology-can-beat-b163189b9893"
+              target="_blank" class="hoverline" onclick="gtag('event', 'click', {
+                event_category: 'Outbound Link',
+                event_label: 'Medium Text - Flutter vs React Native',
+                transport_type: 'beacon'
+              })">
               Flutter vs React Native: The Clear Winner
             </a>
           </a>
         </p>
         <p>
-          <a aria-label="Read Nagasai's Blog on Medium" href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597" target="_blank"
-             data-position="top" data-tooltip="Read Blog on Medium"
-             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+          <!-- Medium icon button with gtag -->
+          <a aria-label="Read Nagasai's Blog on Medium"
+            href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597"
+            target="_blank" data-position="top" data-tooltip="Read Blog on Medium"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" onclick="gtag('event', 'click', {
+                       event_category: 'Outbound Link',
+                       event_label: 'Medium Button - CloudFront Blog',
+                       transport_type: 'beacon'
+                     })">
             <i class="fa fa-medium"></i>
-            <a href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597" target="_blank"
-               class="hoverline">GoDaddy + CloudFront: Subdomain Hosting Simplified</a>
+          </a>
+
+          <!-- Medium text link with gtag -->
+          <a href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597"
+            target="_blank" class="hoverline" onclick="gtag('event', 'click', {
+                       event_category: 'Outbound Link',
+                       event_label: 'Medium Text - CloudFront Blog',
+                       transport_type: 'beacon'
+                     })">
+            GoDaddy + CloudFront: Subdomain Hosting Simplified
           </a>
         </p>
         <p>
-          <a aria-label="Read Nagasai's Blog on Medium" href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597" target="_blank"
-             data-position="top" data-tooltip="Read Blog on Medium"
-             class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+          <!-- Medium icon button with gtag -->
+          <a aria-label="Read Nagasai's Blog on Medium"
+            href="https://medium.com/@nagrepala42/a-comprehensive-guide-to-hosting-a-web-app-on-a-subdomain-with-godaddy-and-cloudfront-f19959b14597"
+            target="_blank" data-position="top" data-tooltip="Read Blog on Medium"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" onclick="gtag('event', 'click', {
+               event_category: 'Outbound Link',
+               event_label: 'Medium Button - Fast-Track Dev Skills',
+               transport_type: 'beacon'
+             })">
             <i class="fa fa-medium"></i>
-            <a href="https://medium.com/@nagrepala42/becoming-a-pro-developer-why-hands-on-practice-beats-theory-every-time-eeff8f6dda15" target="_blank"
-               class="hoverline">How to Fast-Track Your Dev Skills: A Hands-On Guide for Beginners</a>
+          </a>
+
+          <!-- Medium text link with gtag -->
+          <a href="https://medium.com/@nagrepala42/becoming-a-pro-developer-why-hands-on-practice-beats-theory-every-time-eeff8f6dda15"
+            target="_blank" class="hoverline" onclick="gtag('event', 'click', {
+               event_category: 'Outbound Link',
+               event_label: 'Medium Text - Fast-Track Dev Skills',
+               transport_type: 'beacon'
+             })">
+            How to Fast-Track Your Dev Skills: A Hands-On Guide for Beginners
           </a>
         </p>
+
         <!-- Add more blog links as needed -->
       </div>
     </section>
@@ -482,19 +598,49 @@
               class="hoverline">nagrepala42@gmail.com</a></a>
         </p>
         <p>
+          <!-- GitHub icon button -->
           <a aria-label="View Nagasai on GitHub" href="https://github.com/Nagasaikotha" target="_blank"
             data-position="top" data-tooltip="View Nagasai on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Nagasai on Github" href="https://github.com/Nagasaikotha/" class="hoverline"
-              target="_blank">github.com/Nagasaikotha</a></a>
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" onclick="gtag('event', 'click', {
+              event_category: 'Outbound Link',
+              event_label: 'GitHub Button',
+              transport_type: 'beacon'
+            })">
+            <i class="fa fa-github"></i>
+          </a>
+
+          <!-- GitHub text link -->
+          <a aria-label="Nagasai on Github" href="https://github.com/Nagasaikotha/" class="hoverline" target="_blank"
+            onclick="gtag('event', 'click', {
+              event_category: 'Outbound Link',
+              event_label: 'GitHub Text Link',
+              transport_type: 'beacon'
+            })">
+            github.com/Nagasaikotha
+          </a>
         </p>
         <p>
+          <!-- LinkedIn icon button -->
           <a aria-label="View Nagasai on LinkedIn" href="https://www.linkedin.com/in/nagasaikotha/" target="_blank"
             data-position="top" data-tooltip="View Nagasai on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Nagasai on LinkedIn"
-              href="https://www.linkedin.com/in/nagasaikotha" class="hoverline"
-              target="_blank">linkedin.com/in/Nagasaikotha</a></a>
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped" onclick="gtag('event', 'click', {
+     event_category: 'Outbound Link',
+     event_label: 'LinkedIn Button',
+     transport_type: 'beacon'
+   })">
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+          <!-- LinkedIn text link -->
+          <a aria-label="Nagasai on LinkedIn" href="https://www.linkedin.com/in/nagasaikotha" class="hoverline"
+            target="_blank" onclick="gtag('event', 'click', {
+     event_category: 'Outbound Link',
+     event_label: 'LinkedIn Text Link',
+     transport_type: 'beacon'
+   })">
+            linkedin.com/in/Nagasaikotha
+          </a>
+
         </p>
       </div>
     </section>
@@ -527,4 +673,5 @@
     })
   </script>
 </body>
+
 </html>
